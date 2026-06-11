@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After-sale Service | Tarantula</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* 全局页面背景：浅蓝色波纹铺满整个页面 */
+        body{
+            margin:0;
+            background: url('../img/page-bg-blue.jpg') center top / cover no-repeat;
+            background-attachment: fixed;
+            background-color:#f8fbff;
+        }
+        /* Banner Style */
+        .ser-banner {
+            height: 320px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/service1.jpg') center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .ser-banner h1 {font-size:36px;margin-bottom:12px;}
+        .ser-banner p {font-size:18px;opacity:0.9;}
+
+        /* Main Container & Card Layout */
+        .ser-wrap{
+            padding:70px 20px;
+            max-width:1000px;
+            margin:0 auto;
+        }
+        .service-card{
+            background:#ffffff;
+            border-radius:12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            padding:32px;
+            margin-bottom:30px;
+            transition: all 0.3s ease;
+            /* 统一配置：图片居底部、横向平铺压缩、低透明度 */
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: 65% auto;
+            position: relative;
+            overflow: hidden;
+        }
+        /* 蒙版：弱化卡片内配图，保证文字可读性 */
+        .service-card::after{
+            content:"";
+            position:absolute;
+            left:0;top:0;right:0;bottom:0;
+            background:rgba(255,255,255,0.75);
+            z-index:1;
+        }
+        /* 内容层级上浮，盖在蒙版上方 */
+        .service-card > *{
+            position:relative;
+            z-index:2;
+        }
+        /* 四个卡片分别绑定对应背景图 */
+        .card-1{background-image:url('../img/card-warranty.jpg');}
+        .card-2{background-image:url('../img/card-contact.jpg');}
+        .card-3{background-image:url('../img/card-extra.jpg');}
+        .card-4{background-image:url('../img/card-logistics.jpg');}
+
+        .service-card:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .service-card h2{
+            margin:0 0 18px 0;
+            color:#19376D;
+            font-size:22px;
+            border-left:5px solid #ff6700;
+            padding-left:14px;
+        }
+        .service-card p,.service-card li{
+            color:#444;
+            line-height:1.85;
+            font-size:15px;
+            margin:8px 0;
+        }
+        .service-card ul{
+            padding-left:22px;
+            margin:10px 0;
+        }
+        /* Highlight important info */
+        .contact-highlight{
+            color:#ff4500;
+            font-weight:500;
+        }
+        /* Back Button */
+        .back{
+            color:#ff6700;
+            margin-top:20px;
+            display:inline-block;
+            padding:10px 22px;
+            border:1px solid #ff6700;
+            border-radius:6px;
+            transition:0.3s;
+        }
+        .back:hover{
+            background:#ff6700;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<header class="header-nav">
+    <div class="container">
+        <div class="logo">
+            <h2>TARANTULA</h2>
+            <span style="color:#fff;">Professional Gaming Keyboard Manufacturer</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="rd.html">R & D</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="company.html">Company Profile</a></li>
+                <li><a href="service.html" class="active">After-sale Service</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="ser-banner">
+    <h1>After-sale Service</h1>
+    <p>Thoughtful Warranty & Full-Cycle Customer Support</p>
+</section>
+
+<section class="ser-wrap container">
+    <!-- 1.Warranty Terms → 质保盾牌图 card-1 -->
+    <div class="service-card card-1">
+        <h2>1. Warranty Policy</h2>
+        <ul>
+            <li>The F87 keyboard comes with a 24-month nationwide official warranty; free repair and spare part replacement for non-artificial failures within warranty coverage.</li>
+            <li>Free replacement for factory defects within 7 days after receipt; free product exchange for quality issues within 15 days.</li>
+            <li>Damage caused by liquid ingress, dropping or unauthorized disassembly is excluded from free warranty service; repair is available at component cost price.</li>
+        </ul>
+    </div>
+
+    <!-- 2.Support Contact Channels → 电话消息图 card-2 -->
+    <div class="service-card card-2">
+        <h2>2. Consultation Channels</h2>
+        <ul>
+            <li>Online Service: Official store customer service on all sales platforms, available <span class="contact-highlight">9:00 - 22:00</span>.</li>
+            <li>Hotline: Official 400 after-sales hotline, working hours <span class="contact-highlight">8:30 - 18:00 on workdays</span>.</li>
+            <li>Website Ticket: Submit service tickets on official site; our support team will reply within 24 hours.</li>
+        </ul>
+        <p class="contact-highlight">E-mail: service@tarantula-key.com | Service Hotline: 400-XXXX-888</p>
+    </div>
+
+    <!-- 3.Value-added Services → 芯片驱动图 card-3 -->
+    <div class="service-card card-3">
+        <h2>3. Value-added Services</h2>
+        <ul>
+            <li>Lifetime free download and upgrade of official driver software for all F87 users.</li>
+            <li>Original replacement accessories including keycaps, switches and data cables are available for purchase on our official store.</li>
+        </ul>
+    </div>
+
+    <!-- 4.Return & Shipping Regulation → 货车物流图 card-4 -->
+    <div class="service-card card-4">
+        <h2>4. Repair & Logistics Rules</h2>
+        <ul>
+            <li>For valid warranty repairs due to product defects: all round-trip shipping fees are covered by manufacturer.</li>
+            <li>For non-warranty man-made damage repair: customers only cover outgoing shipping cost; return delivery is free from our factory.</li>
+            <li>12 official offline maintenance centers nationwide; in-person inspection available in major first & second-tier cities.</li>
+            <li>All failure data collected from after-sales cases will be shared with R&D team for continuous product optimization and iteration.</li>
+        </ul>
+    </div>
+
+    <a href="../index.html" class="back">← Back to Homepage</a>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Tarantula Electronics. All Rights Reserved | Official Website for F87 Keyboard</p>
+        <p style="margin-top:8px;font-size:15px;color:#ddd;">⚠️ 本网站仅用于学习与研究用途，不构成任何商业用途或官方行为</p>
+    </div>
+</footer>
+</body>
+</html>

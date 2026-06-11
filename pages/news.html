@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events | Tarantula</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .news-banner {
+            height: 320px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/new1.png') center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .news-banner h1 {font-size:36px;margin-bottom:12px;}
+        .news-wrap{padding:70px 0;max-width:1200px;margin:0 auto;}
+        .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+        .news-card{
+            background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);
+            transition:all 0.4s ease;cursor:pointer;position:relative;
+        }
+        .news-card:hover{
+            transform:translateY(-8px);box-shadow:0 12px 32px rgba(0,0,0,0.15);
+        }
+        .news-card:hover .news-image .news-overlay{opacity:1;}
+        .news-card:hover .news-image img{transform:scale(1.1);}
+        .news-image{
+            height:200px;overflow:hidden;position:relative;
+        }
+        .news-image img{
+            width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;
+        }
+        .news-overlay{
+            position:absolute;bottom:0;left:0;right:0;padding:20px;
+            background:linear-gradient(transparent, rgba(0,0,0,0.8));
+            color:#fff;opacity:0;transition:opacity 0.3s ease;
+        }
+        .news-overlay .news-date{
+            font-size:13px;color:#ff6700;font-weight:600;margin-bottom:8px;
+        }
+        .news-overlay h3{
+            font-size:16px;margin:0;line-height:1.4;
+        }
+        .news-content{padding:22px;}
+        .news-content h3{
+            color:#222;font-size:18px;margin-bottom:10px;line-height:1.4;
+        }
+        .news-content p{
+            color:#666;font-size:14px;line-height:1.6;margin:0;
+            display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+        }
+        .back{color:#ff6700;margin-top:40px;display:inline-block;font-weight:600;}
+        @media(max-width:992px){
+            .news-grid{grid-template-columns:repeat(2,1fr);}
+        }
+        @media(max-width:600px){
+            .news-grid{grid-template-columns:1fr;}
+        }
+    </style>
+</head>
+<body>
+<header class="header-nav">
+    <div class="container">
+        <div class="logo">
+            <h2>TARANTULA</h2>
+            <span style="color:#fff;">Professional Gaming Keyboard Manufacturer</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="rd.html">R & D</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="company.html">Company Profile</a></li>
+                <li><a href="service.html">After-sale Service</a></li>
+                <li><a href="news.html" class="active">News & Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="news-banner">
+    <h1>News & Events</h1>
+    <p>Latest Brand Information & Product Activities</p>
+</section>
+
+<section class="news-wrap container">
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../img/new2.png" alt="F87 Firmware Update">
+                <div class="news-overlay">
+                    <div class="news-date">June 15, 2025</div>
+                    <h3>F87 Firmware Major Update Released</h3>
+                </div>
+            </div>
+            <div class="news-content">
+                <h3>F87 Firmware Major Update Released</h3>
+                <p>F87 firmware major update released, fixing Bluetooth disconnection issues and adding multiple new customizable lighting effects for enhanced user experience.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../img/new3(1).jpg" alt="Campus Esports Program">
+                <div class="news-overlay">
+                    <div class="news-date">May 28, 2025</div>
+                    <h3>Campus Esports Program Launched</h3>
+                </div>
+            </div>
+            <div class="news-content">
+                <h3>Campus Esports Program Launched</h3>
+                <p>Tarantula donates F87 keyboards to 15 universities for esports competitions, supporting the development of campus gaming culture.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../img/new4.png" alt="Custom Color Version">
+                <div class="news-overlay">
+                    <div class="news-date">May 12, 2025</div>
+                    <h3>New F87 Custom Color Version</h3>
+                </div>
+            </div>
+            <div class="news-content">
+                <h3>New F87 Custom Color Version Officially Released</h3>
+                <p>Tarantula launches limited customized color F87 mechanical keyboard with new PBT dye-sub keycaps, popular among custom keyboard fans globally.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../img/new5.png" alt="Shanghai Exhibition">
+                <div class="news-overlay">
+                    <div class="news-date">April 28, 2025</div>
+                    <h3>Shanghai Digital Peripheral Exhibition</h3>
+                </div>
+            </div>
+            <div class="news-content">
+                <h3>Shanghai Digital Peripheral Exhibition Success</h3>
+                <p>Tarantula participates in Shanghai Digital Peripheral Exhibition, F87 wins the Annual Popular Peripheral Award.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../img/new6.png" alt="Global Esports Exhibition">
+                <div class="news-overlay">
+                    <div class="news-date">April 20, 2025</div>
+                    <h3>Global E-sports Hardware Exhibition</h3>
+                </div>
+            </div>
+            <div class="news-content">
+                <h3>Tarantula Attends Global E-sports Hardware Exhibition</h3>
+                <p>Our core products F87,F98 are displayed on international hardware exhibition and receive high praise from overseas distributors.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-image">
+                <img src="../img/new7.png" alt="Chinese New Year Promotion">
+                <div class="news-overlay">
+                    <div class="news-date">February 18, 2025</div>
+                    <h3>F87 Chinese New Year Promotion</h3>
+                </div>
+            </div>
+            <div class="news-content">
+                <h3>F87 Chinese New Year Promotion Achieves Great Success</h3>
+                <p>F87 Spring Festival promotion breaks record, with daily sales of all series exceeding 12,000 units.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Tarantula Electronics. All Rights Reserved | Official Website for F87 Keyboard</p>
+        <p style="margin-top:8px;font-size:15px;color:#ddd;">⚠️ 本网站仅用于学习与研究用途，不构成任何商业用途或官方行为</p>
+    </div>
+</footer>
+</body>
+</html>

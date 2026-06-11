@@ -1,0 +1,73 @@
+/*全局重置*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+.container{max-width:1320px;margin:0 auto;padding:0 20px;}
+
+/*顶部深色导航（和截图狼蛛官网导航一致）*/
+.header-nav{
+    background:#121924;
+    padding:16px 0;
+    position:sticky;top:0;z-index:999;
+}
+.header-nav .container{
+    display:flex;justify-content:space-between;align-items:center;
+}
+.logo h2{color:#fff;font-size:22px;letter-spacing:1px;}
+.nav-menu ul{display:flex;gap:42px;align-items:center;}
+.nav-menu a{
+    color:#c9d1dc;
+    font-size:15px;
+    padding:8px 0;
+    position:relative;
+}
+.nav-menu a.active{color:#fff;}
+.nav-menu a.active::after,
+.nav-menu a:hover::after{
+    content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:#0088ff;
+}
+.nav-menu a:hover{color:#fff;}
+.search-box{
+    background:#252e3d;
+    padding:7px 12px;
+    border-radius:4px;
+}
+.search-box input{background:transparent;border:0;color:#fff;outline:none;}
+
+/*Banner居中文字样式（适配深色产品大图）*/
+.banner{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    color:#fff;text-align:center;
+}
+.banner-content h1{font-size:56px;margin-bottom:12px;}
+.banner-content p{font-size:22px;margin-bottom:32px;opacity:0.95;}
+.btn{
+    padding:14px 34px;background:#007bff;color:#fff;border-radius:6px;
+    transition:0.2s;display:inline-block;
+}
+.btn:hover{background:#0063d1;transform: translateY(-3px);box-shadow:0 4px 12px rgba(0,123,255,0.3);}
+
+/*产品筛选按钮*/
+.product-tab-area{
+    padding:50px 0;
+}
+.product-tab-area h2{font-size:32px;color:#222;margin-bottom:24px;}
+.tab-btn-group{display:flex;gap:16px;flex-wrap:wrap;}
+.tab-btn{
+    padding:12px 30px;border:1px solid #ddd;background:#f7f8fa;border-radius:5px;
+    cursor:pointer;transition:0.2s;
+}
+.tab-btn.active{background:#007bff;color:#fff;border-color:#007bff;}
+.tab-btn:hover:not(.active){border-color:#007bff;color:#007bff;}
+
+/*卡片悬浮效果*/
+.link-card{transition:0.3s;border:1px solid #eee;}
+.link-card:hover{box-shadow:0 5px 18px #e2edf9;transform:translateY(-4px);}
+
+/*页脚*/
+.footer{background:#121924;color:#b3c0d3;padding:35px 0;text-align:center;margin-top:60px;}

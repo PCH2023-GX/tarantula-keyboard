@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R & D | Tarantula</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* 页面整体背景 rd0，顶部banner独立图片不共用rd0 */
+        body {
+            margin: 0;
+            background: url("../img/rd0.jpg") center/cover fixed no-repeat;
+            background-color: #1a1a1a;
+        }
+        /* 头部横幅单独保留原独立背景，不和rd0复用 */
+        .rd-banner {
+            height: 320px;
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../img/rd-banner.png') center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .rd-banner h1 { font-size: 36px; margin-bottom: 12px; }
+        .rd-main { padding: 70px 20px; max-width: 960px; margin: 0 auto; }
+        /* 卡片通用样式 */
+        .rd-card{
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:30px;
+            margin-bottom:25px;
+            box-shadow:0 2px 8px #222;
+            position: relative;
+            overflow: hidden;
+        }
+        /* 四张卡片独立背景 rd1~rd4 */
+        .card-1{background: url("../img/rd1.jpg") center/cover no-repeat;}
+        .card-2{background: url("../img/rd2.jpg") center/cover no-repeat;}
+        .card-3{background: url("../img/rd3.jpg") center/cover no-repeat;}
+        .card-4{background: url("../img/rd4.jpg") center/cover no-repeat;}
+        /* 半透明黑色遮罩 */
+        .rd-card::before{
+            content:"";
+            position:absolute;
+            inset:0;
+            background:rgba(0,0,0,0.62);
+            z-index:1;
+        }
+        .card-content{
+            position:relative;
+            z-index:2;
+            color:#fff;
+        }
+        .rd-card h2{
+            margin:0 0 18px;
+            color:#fff;
+            border-left:4px solid #ff6700;
+            padding-left:12px;
+        }
+        .rd-main ul { color: #fff; margin: 10px 0 10px 22px; line-height:1.8; }
+        .rd-main li { margin-bottom:8px; }
+        .rd-main p {color:#fff;line-height:1.8}
+        .back { color: #ff6700; margin-top:10px; display: inline-block; }
+        .footer p{color:#fff; text-align:center; padding:20px 0; margin:0;}
+        .header-nav a{color:#fff;text-decoration:none;}
+        .header-nav a.active{color:#ff6700;}
+        .header-nav ul{display:flex;gap:20px;list-style:none;padding:0;}
+    </style>
+</head>
+<body>
+
+
+<header class="header-nav">
+    <div class="container">
+        <div class="logo">
+            <h2>TARANTULA</h2>
+            <span style="color:#fff;">Professional Gaming Keyboard Manufacturer</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="rd.html" class="active">R & D</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="company.html">Company Profile</a></li>
+                <li><a href="service.html">After-sale Service</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="rd-banner">
+    <h1>R & D Center</h1>
+    <p>Innovation & Technology for Better Keyboards</p>
+</section>
+
+<section class="rd-main container">
+    <!-- 1.Five R&D Groups rd1 -->
+    <div class="rd-card card-1">
+        <div class="card-content">
+            <h2>1. Five R&D Groups</h2>
+            <ul>
+                <li><strong>Structural Design:</strong> F87 shell, inner tank, positioning plate mold opening, ergonomic optimization.</li>
+                <li><strong>Circuit Team:</strong> PCB mainboard & wireless module design, reduce keyboard delay and power consumption.</li>
+                <li><strong>Switch Tuning:</strong> Custom exclusive switches for F87: gaming, silent and tactile switches.</li>
+                <li><strong>Driver Development:</strong> Official driver for macro programming and RGB lighting customization.</li>
+                <li><strong>Testing Team:</strong> Full reliability tests: high-low temp, plug, drop and power aging test.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 2.F87 Core Self-developed Tech rd2 -->
+    <div class="rd-card card-2">
+        <div class="card-content">
+            <h2>2. F87 Self-developed Core Technology</h2>
+            <ul>
+                <li>Total R&D investment: 8 million RMB, 7 authorized utility model patents.</li>
+                <li>Full-key 5-pin hot-swap base, compatible with most 3/5-pin custom switches.</li>
+                <li>In-house 2.4G wireless solution with latency＜8ms, ahead of same-price industry level.</li>
+                <li>3-layer cavity filler: sandwich foam + switch pad + bottom foam to eliminate hollow sound.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--3.Product R&D Process rd3-->
+    <div class="rd-card card-3">
+        <div class="card-content">
+            <h2>3. Product R&D Process</h2>
+            <p><strong>Full Flow:</strong>Project → Draft → 3D Sample → Trial Run → Circuit Debug → Internal Test → Revision → Small Batch → QC → Mass Production</p>
+            <ul>
+                <li>F87 finished 12 structural revisions and 9 PCB version updates before finalization.</li>
+                <li>Firmware & driver updated every two months based on global user feedback.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--4.Sustainable Innovation rd4-->
+    <div class="rd-card card-4">
+        <div class="card-content">
+            <h2>4. Sustainable Innovation</h2>
+            <p>We keep continuous annual R&D investment to launch new products & advanced technologies, satisfying global gamers and office users’ demands.</p>
+        </div>
+    </div>
+
+    <a href="../index.html" class="back">← Back to Homepage</a>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Tarantula Electronics. All Rights Reserved | Official Website for F87 Keyboard</p>
+         <p style="margin-top:8px;font-size:15px;color:#ddd;">⚠️ 本网站仅用于学习与研究用途，不构成任何商业用途或官方行为</p>
+    </div>
+</footer>
+</body>
+</html>

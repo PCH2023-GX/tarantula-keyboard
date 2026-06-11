@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Tarantula</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .team-banner {
+            height: 320px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/team1.jpg') center/cover no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .team-banner h1 {font-size:36px;margin-bottom:12px;}
+        .team-wrap{padding:70px 0;}
+        .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;max-width:1200px;margin:0 auto;padding:0 15px;}
+        .team-card{
+            background:#fff;
+            box-shadow:0 2px 12px rgba(0,0,0,0.1);
+            padding:25px;
+            text-align:center;
+            border-radius:6px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        .team-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #ff6700;
+        }
+        .team-card h3{color:#222;margin:10px 0 6px;font-size:18px;}
+        .team-card .role{color:#ff6700;font-size:15px;margin-bottom:10px;display:block;}
+        .team-card .responsibility{color:#666;font-size:14px;line-height:1.6;}
+        .back{color:#ff6700;margin-top:40px;display:inline-block;max-width:1200px;margin:40px auto 0;padding:0 15px;}
+        .team-desc {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 0 15px;
+            text-align: center;
+        }
+        .team-desc h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .team-desc p {
+            color: #666;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header class="header-nav">
+    <div class="container">
+        <div class="logo">
+            <h2>TARANTULA</h2>
+            <span>Professional Gaming Keyboard Manufacturer</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="rd.html">R & D</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="company.html">Company Profile</a></li>
+                <li><a href="service.html">After-sale Service</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="team.html" class="active">Our Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="team-banner">
+    <h1>Our Team</h1>
+    <p>Core Team Behind Tarantula Mechanical Keyboards</p>
+</section>
+
+<section class="team-wrap">
+    <div class="team-desc">
+        <h2>Meet Our Expert Team</h2>
+        <p>Our team consists of experienced professionals in R&D, design, sales, and customer service, all dedicated to creating the best mechanical keyboard products. Each member is responsible for a core business area, ensuring our products and services meet the highest standards.</p>
+    </div>
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="team-avatar">P</div>
+            <h3>Panchanghui</h3>
+            <span class="role">Product Display Manager</span>
+            <span class="responsibility">Manage product showcase, specifications and marketing material creation</span>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar">W</div>
+            <h3>Chenguo</h3>
+            <span class="role">R & D Director</span>
+            <span class="responsibility">Lead keyboard hardware/software R&D, technical innovation and product prototyping</span>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar">L</div>
+            <h3>Liukaiyu</h3>
+            <span class="role">Homepage Manager</span>
+            <span class="responsibility">Responsible for overall homepage strategy, content planning and user experience optimization</span>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar">C</div>
+            <h3>Weiqinjia</h3>
+            <span class="role">Company Profile Lead</span>
+            <span class="responsibility">Oversee company branding, profile content and corporate image management</span>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar">X</div>
+            <h3>Zhongxianghui</h3>
+            <span class="role">After-sale Service Manager</span>
+            <span class="responsibility">Manage customer support, warranty service and technical assistance</span>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar">Z</div>
+            <h3>Yangzhenru</h3>
+            <span class="role">News & Events Specialist</span>
+            <span class="responsibility">Plan brand events, release product news and manage media relations</span>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar">Y</div>
+            <h3>Xiaochangbing</h3>
+            <span class="role">Recruitment Manager (Join Us)</span>
+            <span class="responsibility">Handle talent recruitment, interview arrangement and team expansion</span>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar">D</div>
+            <h3>Doujinlong</h3>
+            <span class="role">Team Introduction Lead</span>
+            <span class="responsibility">Manage team structure, member coordination and organizational development</span>
+        </div>
+    </div>
+    <div class="container">
+        <a href="../index.html" class="back">← Back to Homepage</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Tarantula Electronics. All Rights Reserved | Official Website for F87 Keyboard</p>
+        <p style="margin-top:8px;font-size:15px;color:#ddd;">⚠️ 本网站仅用于学习与研究用途，不构成任何商业用途或官方行为</p>
+    </div>
+</footer>
+</body>
+</html>
